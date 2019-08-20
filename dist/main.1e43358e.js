@@ -117,26 +117,9 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"assets/resume.pdf":[function(require,module,exports) {
-module.exports = "/resume.5faf746e.pdf";
-},{}],"src/main.js":[function(require,module,exports) {
-"use strict";
+})({"src/main.js":[function(require,module,exports) {
 
-var _resume = _interopRequireDefault(require("../assets/resume.pdf"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var download = document.querySelector('.PDF');
-
-download.onclick = function () {
-  var aLink = document.createElement('a');
-  document.body.appendChild(aLink);
-  aLink.href = _resume.default;
-  aLink.download = "李思情-前端简历.pdf";
-  aLink.click();
-  aLink.remove();
-};
-},{"../assets/resume.pdf":"assets/resume.pdf"}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
