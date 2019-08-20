@@ -1,0 +1,341 @@
+body {
+    background: rgb(0, 192, 125);
+    font: 16px/1.5 SimSun, STKaiti, "Microsoft YaHei", SimHei, Helvetica, Arial;
+    color: #333;
+
+}
+
+/* reset css */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #888;
+}
+
+a:hover {
+    color: black;
+}
+
+strong {
+    color: #FF5700;
+    border-radius: 5px;
+    background: #efefef;
+    font-weight: normal;
+}
+
+.layout {
+    max-width: 1200px;
+    position: relative;
+}
+
+.wrapper {
+    background: #ececec;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.infoList h2 {
+    padding-bottom: 12px;
+}
+
+aside .title {
+    width: 260px;
+}
+
+aside>.title {
+    text-align: center;
+    padding: 30px 0 20px 0;
+}
+
+aside>.title {
+    position: relative;
+    margin-bottom: 32px;
+}
+
+aside>.title::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    margin-top: 20px;
+    border-top: 20px solid #d6d6d6;
+    border-bottom: 20px solid transparent;
+    border-left: 130px solid transparent;
+    border-right: 130px solid #d6d6d6;
+    left: 0;
+    bottom: -32px;
+    /* top: 100%; */
+}
+
+aside>.title h2 {
+    position: relative;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+}
+
+aside>.title h3::after {
+    content: '';
+    position: absolute;
+    display: block;
+    border-top: 1px solid #d6d6d6;
+    width: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+
+aside h1 {
+    font-size: 40px;
+}
+
+aside>.title>img {
+    width: 80px;
+    border-radius: 10%;
+
+}
+
+aside>.infoContainer>.infoList {
+    padding: 8px 20px;
+}
+
+aside>.infoContainer>.infoList>li {
+    border-bottom: 1px solid #d6d6dd;
+    padding: 0;
+    margin: 0;
+    line-height: 32px;
+}
+
+aside>.infoContainer>.infoList svg {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+aside>.infoContainer>.infoList>li>span {
+    border-left: 1px solid #d6d6d6;
+    display: inline-block;
+    padding-left: 10px;
+}
+
+aside>.skillContainer {
+    background: #7bbaaa;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+aside>.skillContainer li>div:nth-child(1) {
+    margin-top: 12px;
+    color: #eee;
+}
+
+aside>.skillContainer .skill .progress {
+    background: #74c5b5;
+    height: 4px;
+    position: relative;
+    border-radius: 2px;
+    margin-top: 4px;
+}
+
+aside>.skillContainer .skill .progress>.mastery {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: #fff;
+    border-radius: 2px;
+}
+
+main {
+    font-size: 14px;
+    background: white;
+    padding: 30px 20px;
+    margin-top: 30px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    box-shadow: 6px 0px 6px 2px rgba(0, 0, 0, 0.1);
+}
+
+main ul>li>span:nth-child(1) {
+    font-weight: bold;
+}
+
+main .contact {
+    display: flex;
+    align-items: center;
+}
+
+main .contact img {
+    width: 140px;
+    border-radius: 4px;
+    margin-right: 20px;
+}
+
+
+main h2 {
+    font-size: 32px;
+    color: #d9d9d9;
+    text-align: center;
+    margin-top: 12px;
+}
+
+main .headline {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+main .item {
+    display: flex;
+}
+
+main .item .tag span {
+    background: #000;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    width: 140px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+main .item .tag {
+    display: inline-block;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    position: relative;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+
+main .content {
+    border-left: 1px solid #eee;
+    position: relative;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+main .content::before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 6px;
+    border: 2px solid #7bbaaa;
+    position: relative;
+    top: 20px;
+    left: -21px;
+}
+main .content img {
+    max-width: 600px;
+    margin: 8px 0;
+}
+main li {
+    margin-left: 0;
+    list-style: disc;
+    color: #666;
+}
+
+main ul {
+    padding-left: 16px;
+}
+
+main .line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .line>div:nth-child(2) {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.designer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #7bbaaa;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+}
+
+.el-button {
+    display: inline-block;
+    line-height: 1;
+    white-space: nowrap;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #dcdfe6;
+    color: #606266;
+    -webkit-appearance: none;
+    text-align: center;
+    box-sizing: border-box;
+    outline: none;
+    margin: 0;
+    transition: .1s;
+    font-weight: 500;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    padding: 12px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+    margin-top: 30px;
+}
+
+.el-button:focus, .el-button:hover {
+    color: #409eff;
+    border-color: #c6e2ff;
+    background-color: #ecf5ff;
+}
+.el-button:active {
+    color: #3a8ee6;
+    border-color: #3a8ee6;
+    outline: none;
+}
+.resumeLink {
+    display: none;
+}
+/* common css */
+@media print {
+    .wrapper {
+        background: #ececec;
+        margin: 0 auto;
+        margin-top: 0;
+        margin-bottom: 0;
+        display: flex;
+    }
+    .PDF {
+        display: none;
+    }
+    main .content img {
+        display: none;
+    }
+    .resumeLink {
+        display: block;
+        width: 140px;
+        text-align: center;
+    }
+}
+
+/*# sourceMappingURL=/style.c61ab535.css.map */
